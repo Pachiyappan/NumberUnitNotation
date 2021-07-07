@@ -4,7 +4,7 @@ Give a number to get notation in units.
 
 sample code: 
 
-const NumberFormatter = (num, digits) => {
+```const NumberFormatter = (num, digits) => {
   const lookup = [
     { value: 1, symbol: "" },
     { value: 1e3, symbol: "k" },
@@ -22,4 +22,4 @@ const NumberFormatter = (num, digits) => {
       return num >= item.value;
     });
   return (num / item.value).toFixed(digits).replace(rx, "$1") + item.symbol;
-};
+};```
